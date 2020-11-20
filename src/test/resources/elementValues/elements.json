@@ -1,0 +1,18 @@
+[
+  {
+    "key": "genderMan",
+    "value": "trendyol.com:id/buttonSelectGenderMan",
+    "type": "id"
+  },
+  {
+    "key": "kategoriler",
+    "value": "trendyol.com:id/tab_search",
+    "type": "id"
+  },
+  {
+    "key": "deodorant",
+    "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.LinearLayout[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]",
+    "type": "xpath"
+  }
+]
+
