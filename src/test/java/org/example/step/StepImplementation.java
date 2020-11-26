@@ -10,6 +10,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.*;
@@ -37,6 +38,19 @@ public class StepImplementation extends BaseTest {
         }
     }
 
+    private List<MobileElement> findElements(String key) {
+        ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
+        By infoParam = ElementHelper.getElementInfoToBy(elementInfo);
+        return driver.findElements(infoParam);
+    }
+
+    public void returnList(String key){
+        List<MobileElement> elementsOne = findElements(key);
+        for (MobileElement a : elementsOne) {
+            System.out.println(a.getText());
+        }
+    }
+
     @Step({"Native içerikten Webview içeriğe geçiş yap"})
     public void contextChange(){
         Set<String> getCont = driver.getContextHandles();
@@ -57,5 +71,22 @@ public class StepImplementation extends BaseTest {
     public void clickAndWaitForElement(String key){
         MobileElement mobileElement = findElement(key);
         mobileElement.click();
+    }
+
+    @Step("<key> listesinin elementlerini dön")
+    public void clickAndReturnElement(String key){
+        returnList(key);
+    }
+
+    @Step("<key> elementini bul ve <index> li değerine tıkla")
+    public void clickListItem(String key, int index) throws InterruptedException {
+        List<MobileElement> elementsOne = findElements(key);
+        elementsOne.get(index).click();
+        Thread.sleep(2000);
+    }
+
+    @Step("<key> saniye bekle")
+    public void clickListItem(int key) throws InterruptedException {
+        Thread.sleep(key);
     }
 }

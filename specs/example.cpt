@@ -4,4 +4,6 @@ This is a concept file with following syntax for each concept.
 # First Case
 * "genderMan" elementini tıkla
 * "kategoriler" elementini tıkla
-* "deodorant" elementini tıkla
+* "kategori_urunleri" listesinin elementlerini dön
+* "deo" elementini tıkla
+* "3" saniye bekle

@@ -10,8 +10,13 @@
     "type": "id"
   },
   {
-    "key": "deodorant",
-    "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.LinearLayout[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]",
+    "key": "kategori_urunleri",
+    "value": "android.widget.ImageView",
+    "type": "class"
+  },
+  {
+    "key": "deo",
+    "value": "//*[@index='0' and @resource-id='trendyol.com:id/linear_layout_category_menu_child_item_container']",
     "type": "xpath"
   }
 ]
